@@ -1,0 +1,18 @@
+<html>
+     <div class="movie-header">
+            <div>
+                <h1>MOVIES</h1>
+            </div>
+        </div>
+        <div class="container">
+            <div class="list-container">
+                <ul id>
+                {{!-- <ul > --}}
+                    {{#each movie}}
+                        <li> <a href = "/singleMovie/{{movie_id}}"> {{movie_title}} </a></li>
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+</html>
+

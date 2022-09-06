@@ -1,0 +1,50 @@
+<html>
+
+<h3>LIST OF YOUR MOVIES:</h3>
+
+{{#each error}}
+    <div class="error-background"> <div class="error"> {{msg}} </div> </div>
+{{/each}}
+
+
+<div class= "rating-container">
+    <table class= "ratings-table">
+        <tr>
+            <th>Movie You Have Watched: </th>
+            {{!-- <th>Options</th> --}}
+        </tr>
+        <tr class="ratings-table-body">
+            {{#each watchlist}}
+            <tr>
+                <td>{{movie_title}}</td>
+                
+            </tr>
+            {{/each}}
+        </tr>
+    </table>
+
+</div>
+<br/>
+
+<div class= "rating-container">
+    <table class= "ratings-table">
+        <tr>
+            <th>Movie You Want To Watch: </th>
+            {{!-- <th>Options</th> --}}
+        </tr>
+        <tr class="ratings-table-body">
+            {{#each wishlist}}
+            <tr>
+                <td>{{movie_title}}</td>
+                
+            </tr>
+            {{/each}}
+        </tr>
+    </table>
+
+</div>
+<br/>
+    
+
+
+</html>

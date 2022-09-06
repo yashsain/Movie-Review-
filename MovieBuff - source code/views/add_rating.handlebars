@@ -1,0 +1,32 @@
+<html>
+
+<h3>ADD NEW RATING:</h3>
+
+{{#each error}}
+    <div class="error-background"> <div class="error"> {{msg}} </div> </div>
+{{/each}}
+
+
+<form id="add_rating" action="/add_rating" method="post">
+    <p>Movie:<p> <select name="id" required> 
+        {{#each movie}}
+        <option value="{{id}}">{{movie_title}}</option>
+        {{/each}}
+    </select><br>
+
+    <p>Score (0-100)</p><input type="number" name="score" ><br>
+    <p>Explanation</p> <input type="text" name="explanation" ><br>
+    <input type="radio" id="addToWatchedList" name="addToWatchedList" value="true">
+    <label for="addToWatchedList">Add to Watch List </label><br>
+    <input type="radio" id="addToWishList" name="addToWishList" value="true">
+    <label for="addToWishList">Add to Wish List List </label><br>
+    
+    <input type="submit" value="Submit">
+
+ </form>
+<br/>
+
+    
+
+
+</html>

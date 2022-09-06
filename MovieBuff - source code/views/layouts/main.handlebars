@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Movie Vault</title>
+    <link rel="stylesheet" href="/style.css" media="screen">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    {{#each jsscripts}}
+    <script src="/static/{{this}}"></script>
+    {{/each}}
+
+</head>
+<body>
+    <header>
+        <div class="topBar">
+            <a href="../movies"><h1 class="site-title">Movie Vault</h1></a>
+
+            <nav class="loginbar">
+                <ul class="loginlist">
+                <li class="loginitem navlink"> <a href= "../login" > LOG IN </a></li>
+                <li class="loginitem navlink"> <a href= "../signup" > SIGN UP </a> </li>
+                <li class="loginitem navlink"> <a href="../logout"  > LOG OUT </a> </li>
+            </nav>
+        </div>
+
+        <nav class="navbar">
+            <ul class="navlist">
+            <li class="navitem navlink active"><a href="../movies">Movies</a></li>
+            <li class="navitem navlink"> <a href= "../profile" > Profile</a> </li>
+            <li class="navitem navbar-search">
+                    <form id="searching" action="/search" method="post">
+                        <input type="text" name="searchInput" id="navbar-search-input" placeholder="Search...">
+                        <button> Search </button>
+                    </form>
+            </li>
+            </ul>
+        </nav>
+    </header>
+
+	{{{body}}}
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<html>
+
+<h1> {{movie_title.movie_title}} </h1>
+
+<div class= "castInfo">
+    <h3>Details: </h3>
+    <table class= "cast-info-table">
+        <tr>
+            <th>Cast: </th>
+            <th>Role In Movie: </th>
+        </tr>
+        {{!-- <tr> --}}
+            {{!-- <th>Role In Movie: </th> --}}
+        {{!-- </tr> --}}
+        <tr class="cast-info-table-body">
+            {{#each cast}}
+            <tr>
+                <td>{{cast_and_crew_name}}</td>
+                <td>{{role_in_movie}}</td>
+            </tr>
+            {{!-- <tr> --}}
+                
+            {{!-- </tr> --}}
+            {{/each}}
+        </tr>
+
+    </table>
+</div>
+
+
+            
+
+
+<br>
+
+<div class= "movieInfo">
+
+    <table class= "movie-info-table">
+        <tr>
+            <th>Movie Duration: </th>
+            <th>Release Date: </th>
+            <th>Language: </th>
+            <th>Country: </th>
+            <th>User Watched: </th>
+            <th>Imdb Rating</th>
+            <th>Rotten Tomatoes Rating</th>
+        </tr>
+        <tr class="movie-info-table-body">
+            <tr>
+                <td>{{movie.movie_duration}}</td>
+                <td>{{movie.release_date}}</td>
+                <td>{{movie.language}}</td>
+                <td>{{movie.country}}</td>
+                <td>{{movie.user_watched}}</td>
+                <td>{{movie.imdb_rating}}</td>
+                <td>{{movie.rotten_tomatoes_rating}}</td>
+            </tr>
+        </tr>
+    </table>
+</div>
+
+<div class= "movieRatings">
+    <h3>Reviews: </h3>
+    <table class= "movie-ratings-table">
+        <tr>
+            <th>Rating: </th>
+            <th>Review: </th>
+        </tr>
+        <tr class="movie-ratings-table-body">
+            {{#each rating_entry}}
+            <tr>
+                <td>{{rating_given}}</td>
+                <td>{{review_given}}</td>
+            </tr>
+            {{/each}}
+        </tr>
+    </table>
+</div>
+
+
+</html>

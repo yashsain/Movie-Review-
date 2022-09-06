@@ -1,0 +1,32 @@
+<html>
+    <div> <p>Welcome to Movie Vault!</p> </div>
+        {{#each error}}
+            <div class="error-background"> <div class="error"> {{msg}} </div> </div>
+        {{/each}}
+
+            <div>
+                <form action="signup" method="POST">
+                    <label for="Username">Username</label>
+                    <input type="text" id="nameEntry" name="username" required><br><br>
+                    <label for="Email">Email</label>
+                    <input type="email" id="emailEntry" name="email_id" required><br><br>
+                    <label for="Password">Password</label>
+                    <input type="password" id="passwordEntry" name="password" required><br><br>
+                    <label for="DateOfBirth">Date Of Birth</label>
+                    <input type="date" id="dateofbirthEntry" name="date_of_birth" required><br><br>
+                    <label for="Phone_No">Phone No.</label>
+                    <input type="text" id="phonenoEntry" name="phone_no" required><br><br>
+                    <label for="street">Street</label>
+                    <input type="text" id="streetEntry" name="street" required><br><br>
+                    <label for="city">City</label>
+                    <input type="text" id="cityEntry" name="city" required><br><br>
+                    <label for="state">State</label>
+                    <input type="text" id="stateEntry" name="state" required><br><br>
+                    <label for="country">Country</label>
+                    <input type="text" id="countryEntry" name="country" required><br><br>
+                    <label for="zipcode">Zipcode</label>
+                    <input type="text" id="zipcodeEntry" name="zipcode" required><br><br>
+                    <input type="submit" value="Register">
+                </form>
+            </div>
+</html>

@@ -1,0 +1,166 @@
+*{
+    font-family: Helvetica;
+}
+a {
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    background-image: url('./background.jpg');
+}
+
+h1, h2, h3, h4, h5, h6, p, label,li,ul,a,th,td{
+    color : rgb(212, 189, 191);
+    border-color: rgb(212,189,191);
+}
+
+table,th,tr {
+    border: 1px solid rgb(212,189,191);
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+.topbar{
+    width: 100%;
+    height: 48px;
+}
+
+.site-title{
+    color: white;
+    background-color: red;
+    font-size: 28px;
+    margin: 0;
+    padding: 8px; 
+}
+
+.loginbar{
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+.loginlist{
+    display: flex;
+    padding-left: 0;
+    margin: 0;
+    padding: 8px;
+    padding-top: 11px;
+    top:0;
+
+    float:right;
+}
+.loginlist > li{
+    display: inline;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+}
+.loginitem > a{
+    color: white;
+}
+
+.navbar{
+    background: #BCBCBC;
+    width: 100%;
+    height: 30px;
+    padding-top: 10px;
+}
+.navlist{
+    margin:0;
+    padding-left: 7px;
+}
+.navlist > li {
+    display: inline;
+    margin: 5px;
+    margin-bottom:0px;
+    color: white;
+}
+
+.navlink > a {
+    color: white;
+}
+
+.navbar-search{
+    position: relative;
+    top: -7px;
+    float:right;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
+}
+
+#navbar-search-input{
+    background-color:  #ebebeb  ;
+    font-size: 10px;
+    height: 20px;
+    width: 140px;
+}
+
+
+
+th {
+  border: 1px solid black;
+}
+.ratings-table{
+    width:100%;
+}
+.ratings-table .ratings-table-body{
+  display:block;
+  overflow:auto;
+  padding: 3px;
+
+}
+.ratings-table thead tr{
+  display:block;
+}
+.update-button{
+    margin-left: 5px;
+}
+
+.error{
+    border-radius: 25px;
+    text-align: center;
+    width: 350px;
+    padding: 5px;
+    background-color: #f58a42;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.movie-header{
+    text-align:center;
+    font-size:x-large;
+    text-decoration: underline;
+    margin-bottom: -20px;
+}
+
+.list-container{
+    text-align:center;
+    font-size: large;
+
+}
+
+#movies{
+    padding:0px;
+}
+#movies li{
+    margin: 0 0 5px 0;
+
+}
+
+#movies a:link{
+    color:black;
+}
+#movies a:visited{
+    color:pink;
+}
+
+#movies a:hover{
+    color:red;
+}
+
+.container{
+    margin-top: -10px;
+    padding-top:0px;
+}
+
